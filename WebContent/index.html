@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KWeb Limited</title>
+</head>
+<body>
+
+
+	<h1 id="idH1">KWeb Programming Services</h1>
+	<button id="bButton" onclick="mBig()">mBig</button>
+	<h2>Staff
+	</h2>
+	<button onmouseleave="hLeave()" onmouseenter="hEnter()">AAA</button>
+	<h3>Stella, Jr. Programmer</h3>
+	
+<script>
+	function mBig() {
+    	var x = document.getElementById("bButton");
+    	x.style.fontSize = "35px";  
+    
+    	x.innerHTML = "BIGGIE";
+    	//x.style.color = "red"; 
+    	var ss = x.style.fontSize;
+    	if(ss === 35){
+    		x.style.fontSize = "15px";
+    	}
+    	else if(ss === 15){
+    		x.style.fontSize = "35px";
+    	}
+    	
+}
+	
+	function hEnter() {
+    	var x = document.getElementById("bButton");
+    	//x.style.fontSize = "25px";           
+    	x.style.color = "red"; 
+    	
+    	document.getElementById("idH1").innerHTML = "ENTRADA";
+}
+	
+	function hLeave() {
+    	var x = document.getElementById("bButton");
+    	//x.style.fontSize = "25px";           
+    	x.style.color = "blue"; 
+    	
+    	document.getElementById("idH1").innerHTML = "LEFTOS";
+}
+	
+</script>
+	
+
+
+
+</body>
+
+
+
+</html>
